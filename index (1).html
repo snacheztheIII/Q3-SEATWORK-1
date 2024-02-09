@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <style>
+
+    	body {
+    		background-image: url('https://ilarge.lisimg.com/image/6252012/740full-nidoqueen.jpg');
+    		background-size: cover;
+    		background-position: center;
+    		}
+
+		.grid-container {
+    		display: grid;
+    		grid-template-columns: repeat(2, 500px);
+    		grid-template-rows: repeat(3, 600px);
+    		grid-row-gap: 50px;
+    		padding: 15px;
+    		margin: auto;
+    		max-width: 1200px;
+			}	
+        
+        .grid-item {
+   			background-color: royalblue;
+    		border: thick solid blanchedalmond;
+   			display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		align-items: center;
+    		text-align: center;
+    		}
+
+        img {
+        	padding: 8px;
+        }
+
+        h1 {
+        	position: relative;
+        	display: flex;
+    		justify-content: center;
+    		align-items: flex-start;
+    		position: absolute;
+    		top: 0;
+    		font-size: 50px;
+    		color: blanchedalmond;
+        }
+
+        h2 {
+        	bottom: 0;
+        	color: blanchedalmond;
+        }
+
+        p {
+        	font-size: 50px;
+        	text-align: center;
+        	color: blanchedalmond;
+        }
+
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+        <div class="grid-item">
+        	<img src="https://img.pokemondb.net/artwork/avif/nidoran-f.avif" height="370" width="330">
+        	<h1>Pokemons</h1>
+        	<h2>Nidoran♀</h2>
+        </div>
+        <div class="grid-item">
+        	<h1>Information</h1>
+        	<p>Nidoran is the first evolution to getting Nidoqueen</p>
+            </div>
+
+        <div class="grid-item">
+        	<img src="https://img.pokemondb.net/artwork/avif/nidorina.avif" height="370" width="330">
+        	<h2>Nidorina</h2>
+        </div>
+        <div class="grid-item">
+            <p>Nidorina is the second evolution to getting Nidoqueen</p>
+        </div>
+
+        <div class="grid-item">
+        	<img src="https://img.pokemondb.net/artwork/avif/nidoqueen.avif" height="370" width="330">
+        	<h2>Nidoqueen</h2>
+        </div>
+        <div class="grid-item">
+        	<p>Nidoqueen is the final evolution</p>
+        </div>
+    </div>
+</body>
+</html>
